@@ -55,10 +55,14 @@ public class DayTwo {
 
             if (diff >= 1 && diff <= 3) {
                 if (sequenceType == null) sequenceType = "ascending";
+
                 if (!sequenceType.equals("ascending")) return false;
+
             } else if (diff >= -3 && diff <= -1) {
                 if (sequenceType == null) sequenceType = "descending";
+
                 if (!sequenceType.equals("descending")) return false;
+
             } else {
                 return false; // Invalid difference
             }
